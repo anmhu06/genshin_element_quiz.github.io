@@ -343,6 +343,13 @@ resultDiv.innerHTML = `
 You are aligned with the ${topElement} element!
 </h2>
 
+<h3>Your Choices:</h3>
+
+${userChoices.map(c =>
+`<p><b>${c.question}</b> → ${c.choice} (${c.element})</p>`
+).join("")}
+
+
 <h3>Element Breakdown:</h3>
 
 ${Object.entries(scores).map(([el, sc]) =>
@@ -367,3 +374,4 @@ loadQuestion();
 
 </body>
 </html>
+

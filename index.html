@@ -129,110 +129,110 @@ const questions = [
     {
         text: "Pick a fruit:",
         answers: [
-            { text: "Strawberries", element: "Pyro" },
-            { text: "Lemon", element: "Geo" },
-            { text: "Apples", element: "Anemo" },
-            { text: "Blueberry", element: "Electro" },
-            { text: "Oranges", element: "Dendro" },
-            { text: "Peaches", element: "Cryo" },
-            { text: "Mango", element: "Hydro" }
+            { text: "Strawberries", element: ["Pyro", "Dendro"] },
+            { text: "Lemon", element: ["Geo"] },
+            { text: "Apples", element: ["Anemo"] },
+            { text: "Blueberry", element: ["Electro", "Hydro"] },
+            { text: "Oranges", element: ["Dendro"] },
+            { text: "Peaches", element: ["Cryo", "Pyro"] },
+            { text: "Mango", element: ["Hydro", "Geo"] }
         ]
     },
 
     {
         text: "Choose a personality trait:",
         answers: [
-            { text: "Bold and passionate", element: "Pyro" },
-            { text: "Calm and adaptable", element: "Hydro" },
-            { text: "Free-spirited", element: "Anemo" },
-            { text: "Analytical", element: "Electro" },
-            { text: "Reliable and grounded", element: "Geo" },
-            { text: "Kind and nurturing", element: "Dendro" },
-            { text: "Quiet and reserved", element: "Cryo" }
+            { text: "Bold and passionate", element: ["Pyro"] },
+            { text: "Calm and adaptable", element: ["Hydro"] },
+            { text: "Free-spirited", element: ["Anemo"] },
+            { text: "Analytical", element: ["Electro"] },
+            { text: "Reliable and grounded", element: ["Geo"] },
+            { text: "Kind and nurturing", element: ["Dendro"] },
+            { text: "Quiet and reserved", element: ["Cryo"] }
         ]
     },
     {
         text: "Choose a dessert:",
         answers: [
-            { text: "Chocolate cake", element: "Pyro" },
-            { text: "Ice cream", element: "Cryo" },
-            { text: "Fruit tart", element: "Dendro" },
-            { text: "Waffles", element: "Anemo" },
-            { text: "Cheesecake", element: "Geo" },
-            { text: "Tiramisu", element: "Hydro" },
-            { text: "Carrot Cake", element: "Electro" }
+            { text: "Chocolate cake", element: ["Pyro"] },
+            { text: "Ice cream", element: ["Cryo"] },
+            { text: "Fruit tart", element: ["Dendro"] },
+            { text: "Waffles", element: ["Anemo"] },
+            { text: "Cheesecake", element: ["Geo"] },
+            { text: "Tiramisu", element: ["Hydro"] },
+            { text: "Carrot cake", element: ["Electro"] }
         ]
     },
     {
         text: "Favorite elemental reaction?",
         answers: [
-            { text: "Overload", element: "Pyro" },
-            { text: "Freeze", element: "Cryo" },
-            { text: "Bloom", element: "Dendro" },
-            { text: "Swirl", element: "Anemo" },
-            { text: "Crystallize", element: "Geo" },
-            { text: "Electro-Charged", element: "Electro" },
-            { text: "Vaporize", element: "Hydro" }
+            { text: "Overload", element: ["Pyro", "Electro"] },
+            { text: "Freeze", element: ["Cryo", "Hydro"] },
+            { text: "Bloom", element: ["Dendro"] },
+            { text: "Swirl", element: ["Anemo"] },
+            { text: "Crystallize", element: ["Geo"] },
+            { text: "Electro-Charged", element: ["Electro"] },
+            { text: "Vaporize", element: ["Hydro"] }
         ]
     },
     {
         text: "Favorite boba flavor?",
         answers: [
-            { text: "Classic milk tea", element: "Geo" },
-            { text: "Taro", element: "Electro" },
-            { text: "Matcha", element: "Dendro" },
-            { text: "Strawberry milk", element: "Pyro" },
-            { text: "Mango slush", element: "Anemo" },
-            { text: "Lychee tea", element: "Hydro" },
-            { text: "Wintermelon", element: "Cryo" }
+            { text: "Classic milk tea", element: ["Geo"] },
+            { text: "Taro", element: ["Electro"] },
+            { text: "Matcha", element: ["Dendro"] },
+            { text: "Strawberry milk/slush", element: ["Pyro"] },
+            { text: "Mango slush", element: ["Anemo"] },
+            { text: "Lychee tea", element: ["Hydro"] },
+            { text: "Thai Tea", element: ["Cryo"] }
         ]
     },
     {
         text: "Choose a real-life place:",
         answers: [
-            { text: "Volcano", element: "Pyro" },
-            { text: "Rainforest", element: "Dendro" },
-            { text: "Beach", element: "Hydro" },
-            { text: "Snowy mountains", element: "Cryo" },
-            { text: "Open plains", element: "Anemo" },
-            { text: "Caves", element: "Geo" },
-            { text: "City at night", element: "Electro" }
+            { text: "Volcano", element: ["Pyro"] },
+            { text: "Rainforest/National Park", element: ["Dendro"] },
+            { text: "Beach", element: ["Hydro"] },
+            { text: "Snowy mountains", element: ["Cryo"] },
+            { text: "Open plains", element: ["Anemo"] },
+            { text: "Caves", element: ["Geo"] },
+            { text: "City at night", element: ["Electro"] }
         ]
     },
     {
         text: "Pick a meal:",
         answers: [
-            { text: "Pho", element: "Hydro" },
-            { text: "Ramen", element: "Pyro" },
-            { text: "Udon", element: "Geo" },
-            { text: "Sushi", element: "Cryo" },
-            { text: "Korean BBQ", element: "Electro" },
-            { text: "Chinese food", element: "Dendro" },
-            { text: "American Breakfast", element: "Anemo"}
+            { text: "Pho", element: ["Hydro"] },
+            { text: "Ramen", element: ["Pyro"] },
+            { text: "Udon", element: ["Geo"] },
+            { text: "Sushi", element: ["Cryo"] },
+            { text: "Korean BBQ", element: ["Electro"] },
+            { text: "Chinese food", element: ["Dendro"] },
+            { text: "American Breakfast", element: ["Anemo"]}
         ]
     },
     {
         text: "Preferred combat type?",
         answers: [
-            { text: "All-out offense", element: "Pyro" },
-            { text: "Support and healing", element: "Hydro" },
-            { text: "Fast and evasive", element: "Anemo" },
-            { text: "Strategic control", element: "Electro" },
-            { text: "Defense and shields", element: "Geo" },
-            { text: "Steady and calculated", element: "Cryo" },
-            { text: "Tactical setups", element: "Dendro" }
+            { text: "All-out offense", element: ["Pyro"] },
+            { text: "Support and healing", element: ["Hydro"] },
+            { text: "Fast and evasive", element: ["Anemo"] },
+            { text: "Strategic control", element: ["Electro" ]},
+            { text: "Defense and shields", element: ["Geo" ]},
+            { text: "Steady and calculated", element: ["Cryo"] },
+            { text: "Tactical setups", element: ["Dendro"] }
         ]
     },
     {
         text: "Pick a word that resonates with you:",
         answers: [
-            { text: "Passion", element: "Pyro" },
-            { text: "Freedom", element: "Anemo" },
-            { text: "Growth", element: "Dendro" },
-            { text: "Calm", element: "Hydro" },
-            { text: "Power", element: "Electro" },
-            { text: "Stability", element: "Geo" },
-            { text: "Stillness", element: "Cryo" }
+            { text: "Passion", element: ["Pyro"] },
+            { text: "Freedom", element: ["Anemo"] },
+            { text: "Growth", element: ["Dendro"] },
+            { text: "Calm", element: ["Hydro" ]},
+            { text: "Power", element: ["Electro"] },
+            { text: "Stability", element: ["Geo" ]},
+            { text: "Stillness", element: ["Cryo"] }
         ]
     }
 ];
@@ -280,17 +280,21 @@ function loadQuestion() {
         btn.textContent = answer.text;
 
         btn.onclick = () => {
-            scores[answer.element]++;
-
+            // Add points for every element listed
+            answer.elements.forEach(el => {
+                scores[el]++;
+            });
+        
             userChoices.push({
                 question: q.text,
                 choice: answer.text,
-                element: answer.element
+                element: answer.elements.join(", ")
             });
-
+        
             currentQuestion++;
             loadQuestion();
         };
+
 
         optionsDiv.appendChild(btn);
     });
@@ -360,4 +364,5 @@ loadQuestion();
 
 </body>
 </html>
+
 

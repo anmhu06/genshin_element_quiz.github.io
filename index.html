@@ -268,6 +268,8 @@ Pyro: 0, Hydro: 0, Anemo: 0,
 Electro: 0, Geo: 0, Cryo: 0, Dendro: 0
 };
 
+let userChoices = [];
+
 function updateProgress() {
 document.getElementById("progress-bar").style.width =
 ((currentQuestion / questions.length) * 100) + "%";
@@ -305,6 +307,13 @@ btn.textContent = answer.text;
 
 btn.onclick = () => {
 answer.element.forEach(el => scores[el]++);
+
+userChoices.push({
+question: q.text,
+choice: answer.text,
+element: answer.element.join(", ")
+});
+    
 currentQuestion++;
 loadQuestion();
 };
@@ -374,4 +383,5 @@ loadQuestion();
 
 </body>
 </html>
+
 

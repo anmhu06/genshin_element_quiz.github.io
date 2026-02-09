@@ -36,6 +36,7 @@ h1, h2 {
     to { opacity: 1; transform: translateY(0); }
 }
 
+/* ---- ORIGINAL BUTTON STYLING ---- */
 .options button {
     display: block;
     margin: 8px 0;
@@ -286,6 +287,9 @@ const title = document.createElement("h2");
 title.textContent = q.text;
 qDiv.appendChild(title);
 
+const optionsDiv = document.createElement("div");
+optionsDiv.className = "options";
+
 q.answers.forEach(answer => {
 const btn = document.createElement("button");
 btn.textContent = answer.text;
@@ -303,9 +307,10 @@ currentQuestion++;
 loadQuestion();
 };
 
-qDiv.appendChild(btn);
+optionsDiv.appendChild(btn);
 });
 
+qDiv.appendChild(optionsDiv);
 quizDiv.appendChild(qDiv);
 }
 
@@ -313,19 +318,8 @@ function launchConfetti() {
 const end = Date.now() + 2500;
 
 (function frame() {
-confetti({
-particleCount: 6,
-angle: 60,
-spread: 55,
-origin: { x: 0 }
-});
-
-confetti({
-particleCount: 6,
-angle: 120,
-spread: 55,
-origin: { x: 1 }
-});
+confetti({ particleCount: 6, angle: 60, spread: 55, origin: { x: 0 } });
+confetti({ particleCount: 6, angle: 120, spread: 55, origin: { x: 1 } });
 
 if (Date.now() < end) requestAnimationFrame(frame);
 })();
@@ -351,20 +345,16 @@ You are aligned with the ${topElement} element!
 <h3>Your Choices:</h3>
 
 ${userChoices.map(c =>
-`<p><b>${c.question}</b> → ${c.choice}
-(${c.element})</p>`
+`<p><b>${c.question}</b> → ${c.choice} (${c.element})</p>`
 ).join("")}
 
 <h3>Breakdown:</h3>
 
 ${Object.entries(scores).map(([el, sc]) =>
-`<p style="color:${solidColors[el]}">
-${el}: ${sc}</p>`
+`<p style="color:${solidColors[el]}">${el}: ${sc}</p>`
 ).join("")}
 
-<button id="restart" onclick="restartQuiz()">
-Restart Quiz
-</button>
+<button id="restart" onclick="restartQuiz()">Restart Quiz</button>
 `;
 
 launchConfetti();
